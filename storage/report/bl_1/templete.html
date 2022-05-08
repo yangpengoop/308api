@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+
+		body::-webkit-scrollbar {
+			width: 30px;    
+		}
+		body::-webkit-scrollbar-thumb {
+			border-radius:.15rem;
+			-webkit-box-shadow: inset 0 0 5px #2552A1;
+			background: #2552A1;
+
+		}
+		body::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 5px #2552A1;
+			border-radius: 0;
+			background: rgba(0,0,0,0.1);
+		}
+		
+        * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+
+        /*
+            Introduced in IE 10.
+            See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+        */
+        -ms-user-select: none;
+        user-select: none;}
+        
+    	div{
+    		font-weight: bold;display: inline-block;font-weight: normal;
+    	}
+        .body-div{
+            width:810px;background:white;
+        }
+
+    </style>
+
+</head>
+<body id="body" style="width: 800px">
+    <div id="body-div" class="body-div" style="font-weight: bold;display: inline-block;font-weight: normal; width:800px;background:white; padding-top:10px " >
+        <div class="hospitalName" style="font-weight: bold;font-weight: normal;  width: 800px; text-align: center;background-color:white;" >
+            <span class="nameSpan unselectable" style="background-color:white;font-weight: bold;font-weight: normal;font-size: 35px;font-family: '楷体';font-weight:bold;letter-spacing:16px;margin: 30px auto 16px;" >{{Hospital_name}}</span>
+        </div>
+        <div class="hospitalName" style="font-weight: bold;display: inline-block;font-weight: normal;  width: 100%;" >
+            <div class="surgicalReport " style="font-weight: bold;display: inline-block;font-weight: normal;font-size: 28px;font-family: '楷体';font-weight:bold;letter-spacing:5px;color: darkblue;margin-bottom: 10px;width: 100%;text-align: center;" >手术报告单</div>
+        </div>
+        
+        <div  class="tableMsg" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;border: 2px solid grey;width: 765px; height: 900px;padding: 10px;">
+            
+             <div class="information fw" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;margin-left: 25px;width: 720px;" >
+               
+                <span class="width220"  style="font-family: '微软雅黑';font-weight: bold;font-weight: normal; width: 220px;">
+                    <span class="fwb" style="font-family: '微软雅黑';font-weight: bold;font-weight: normal;font-weight: bold;">姓</span><span class="ml35 fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold; margin-left: 35px;">名：</span><span class="wb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Patient_name}}</span>
+                </span>
+                <span class="width100" >
+                    <span class="fwb mr5" style="font-family: '微软雅黑';font-weight: bold;font-weight: normal;font-weight: bold;margin-right: 5px;">性</span><span class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">别：</span><span class="wb mr10" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-right: 10px;word-wrap: break-word;word-break: break-all;">{{Gender}}</span>
+                </span>
+                <span class="width120 mr10" style="font-family: '微软雅黑';font-weight: bold;font-weight: normal;margin-right: 10px;">
+                    <span class="fwb mr5" style="font-family: '微软雅黑';font-weight: bold;font-weight: normal;font-weight: bold;margin-right: 5px;">年</span><span class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">龄：</span><span class="wb " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Age}}</span><span class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">岁</span>
+                </span>
+                <span class="width140" >
+                    <span class="fwb mr5" style="font-family: '微软雅黑';font-weight: bold;font-weight: normal;font-weight: bold;margin-right: 5px;">科</span><span class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">别：</span><span class="wb mr10" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-right: 10px;word-wrap: break-word;word-break: break-all;">{{Category_name}}</span>
+                </span>
+                <span >
+                    <span class="fwb" style="font-family: '微软雅黑';font-weight: bold;font-weight: normal;font-weight: bold;">住院号：</span> <span class="wb " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{InHospital_number}}</span>
+                </span>
+
+                 <!--   <div class="width220" ><div class="fwb">姓</div><div class="ml35 fwb">名：</div><div class="wb mr10">啊啊啊</div></div>
+                      <div class="width100" ><div class="fwb mr5">性</div><div class="fwb">别：</div><div class="wb mr10">男</div></div>
+                      <div class="width120 mr10"  ><div class="fwb mr5">年</div><div class="fwb">龄：</div><div class="wb ">99</div><div class="fwb">岁</div></div>
+                      <div class="width140" ><div class="fwb mr5">科</div><div class="fwb">别：</div><div class="wb mr10">神经外科</div></div>
+                      <div ><div class="fwb ">住院号：</div> <div class="wb mr10">987654321</div></div> -->
+
+            </div>
+                <div class="information " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;border-top: 2px solid lightgrey;border-bottom: 2px solid lightgrey;margin-left: 25px;width: 720px;" >
+
+                        <div class="fwba" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;width: 700px;">
+                            <div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">手术时间：</div>
+                            <div class="wb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Op_time}}</div>
+                        </div>
+                </div>
+                <div class="information" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;border-bottom: 2px solid lightgrey;margin-left: 25px;width: 720px;" >
+                        <div class="fwba" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;width: 700px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">手术名称：</div><div class="wb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Op_name}}</div></div>
+                </div>
+                <div class="information" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;border-bottom: 2px solid lightgrey;margin-left: 25px;width: 720px;" >
+                        <!-- 修改地方 -->
+                    <div sclass="fwba" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;width: 700px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">术前诊断：</div><div class="wb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Before_check}}</div></div>
+            </div>
+            <div class="information" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;border-bottom: 2px solid lightgrey;margin-left: 25px;width: 720px;" >
+                    <!-- 修改地方 -->
+                    <div class="fwba" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;width: 700px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">手术结论：</div><div class="wb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{After_check}}</div></div>
+            </div>
+            <div class="information fw" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;border-bottom: 2px solid lightgrey;margin-left: 25px;width: 720px;" >
+                    <div class="mr20" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-right: 10px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">手术医师：</div><div class="wb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Op_doctor}}</div></div>
+                    <div class="mr20" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-right: 10px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">助手：</div><div class="wb " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{One_helper}}</div></div>
+                    <div class="mr20" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-right: 10px;" ><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">器械士：</div><div class="wb " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Tool_doctor}}</div></div>
+            </div>
+            <div class="information fw" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;border-bottom: 2px solid lightgrey;margin-left: 25px;width: 720px;" >
+                    <div class="mr20" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-right: 10px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">麻醉方法：</div><div class="wb " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Narcosis_type}}</div></div>
+                    <div class="mr20" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-right: 10px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">麻醉师：</div><div class="wb " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{Narcosis_doctor}}</div></div>
+            </div>
+            <div class="opContent"  style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;padding-bottom: 20px;margin-left: 25px;" >
+                    <div class="" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">术中所见及手术经过：</div>
+                    <span class="opContentMsg" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-size: 15px;margin-left: 20px;padding: 8px;height: 125px;width: 679px;word-wrap: break-word;word-break: break-all;text-indent:30px;">{{Op_content}}</span>
+
+            </div>
+            <div class="information" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding:6px 0 8px 0;border-bottom: 2px solid lightgrey;margin-left: 25px;width: 720px;">
+                <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;display: flex;width: 700px;">
+                    <!-- 修改地方 -->
+                    <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;width: 46%;margin-right: 20px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">适检部分：</div><div class="wb " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{check_path}}</div></div>
+                    <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;width: 46%;margin-right: 20px;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">病理诊断：</div><div class="wb " style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;word-wrap: break-word;word-break: break-all;">{{pathology_check}}</div></div>
+                </div>
+            </div>
+            <div class="information" style="font-family: '微软雅黑';font-weight: bold;font-weight: normal;padding:6px 0 8px 0;border-bottom: 2px solid lightgrey;margin-left: 25px;width: 720px;" >
+                    <!-- 修改地方 -->
+                    <span style="font-family: '微软雅黑';font-weight: bold;font-weight: normal;width: 80%;"><span class="fwb" style="font-family: '微软雅黑';font-weight: normal;font-weight: bold;">建议：</span><span>{{propose}}</span></span>
+            </div>
+            <!-- <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-left: -5px;display:list-item;justify-content:left;overflow: hidden;width: 800px;"> -->
+            <div style="font-family: '微软雅黑';width: 780px;">
+                    <img src="{{Img_1}}" alt="" style="font-family: '微软雅黑'; height:38%; width: 31.5%;margin: 3px;">
+                    <img src="{{Img_2}}" alt="" style="font-family: '微软雅黑'; height:38%; width: 31.5%;margin: 3px;">
+                    <img src="{{Img_3}}" alt="" style="font-family: '微软雅黑'; height:38%; width: 31.5%;margin: 3px;">
+                    <img src="{{Img_4}}" alt="" style="font-family: '微软雅黑'; height:38%; width: 31.5%;margin: 3px;">
+                    <img src="{{Img_5}}" alt="" style="font-family: '微软雅黑'; height:38%; width: 31.5%;margin: 3px;">
+                    <img src="{{Img_6}}" alt="" style="font-family: '微软雅黑'; height:38%; width: 31.5%;margin: 3px;">
+            </div>
+            <!-- <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;display: flex;padding:6px 0px 8px 0px;" >
+
+                <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;display: flex;padding:6px 0 8px 0;padding-bottom: 20px;border-bottom: 2px solid lightgrey;" >
+                    <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-left: 25px;">
+                        <sapn  >术后评语：</sapn>
+                        <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-size: 15px;margin-left: 20px;padding: 8px;height: 300px;overflow: hidden;">{{Op_result}}</div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;display: flex;padding:6px 0 8px 0;" >
+            <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;margin-left: 25px;display: flex;width: 700px;">
+                <!-- 修改地方 -->
+                <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;width: 68%;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">....祝您健康....</div></div>
+                <div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;width: 30%;"><div class="fwb" style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;font-weight: bold;">报告医师：</div><div style="font-family: '微软雅黑';font-weight: bold;display: inline-block;font-weight: normal;padding-left: 10px;">{{Doctor_sign}}</div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

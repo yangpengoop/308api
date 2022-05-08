@@ -1,0 +1,62 @@
+=========  nginx  =========
+
+查看nginx进程：ps -ef | grep nginx
+
+关闭nginx：pkill -9 nginx
+
+加放站点配置
+创建vhost:mkdir -p /usr/nginx/conf/vhost
+cd link/web/core309
+cp 309.conf /usr/nginx/conf/vhost/309.conf
+
+修改nginx配置文件
+vi /usr/nginx/conf/nginx.conf
+在http｛｝中加入include vhost/*.conf;
+
+
+
+=========  php  =========
+
+修改php-fpm配置文件：cd /usr/php7/etc && cp php-fpm.conf.default php-fpm.conf
+
+vi php-fpm.conf 修改文件最后一行  include=/home/zc/cross/v500/php7/etc/php-fpm.d/*.conf  改为 include=/home/zc/cross/v500/php7/etc/php-fpm.d/www.conf
+
+cd /usr/php7/etc/php-fpm.d  && cp www.conf.default www.conf && vi www.conf  修改 user = root  和 group = root
+
+【修改上传文件大小】
+
+=========  init.sh  =========
+备注说明：
+	/link/web/	站点代码路径
+	/link/shell/	shell脚本路径，init.sh用于初始化配置，
+	/root/demo/config	用于切换主界面和转播界面
+
+cd /root/demo && ./UI &
+
+cd /usr/php7/sbin && ./php-fpm -R
+
+=========  init.sh  =========
+
+========= 其他杂项 =======
+创建nginx和php路径快捷键
+mkdir /home/zc/cross/v500 && cd /home/zc/cross/v500 && ln -s /usr/nginx nginx && ln -s /usr/php7 php7
+
+mount -t nfs -o nolock,tcp 192.168.10.159:/core309 /link/web/core309
+
+vi /root/demo/config
+{"url":"http://127.0.0.1:808/#/decode/home"}
+
+
+DHCP 自动获取ip
+cp /link/web/core309/ip_dgcp.sh  /usr/share/udhcpc/ip_dhcp.sh
+udhcpc -b -S -p /var/run/udhcpc.pid -s /usr/share/udhcpc/ip_dhcp.sh
+
+
+cd /link/web && mv core309_local core309_bak
+
+定时器配置
+mkdir -p /var/spool/cron/crontabs
+
+
+
+

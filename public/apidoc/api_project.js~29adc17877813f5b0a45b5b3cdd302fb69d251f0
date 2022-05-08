@@ -1,0 +1,20 @@
+define({
+  "name": "309项目接口提供",
+  "version": "0.1.0",
+  "description": "309 api doc",
+  "title": "309项目接口提供_codeRTC api doc",
+  "url": "http://localhost",
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+<<<<<<< HEAD
+    "time": "2019-04-16T06:32:58.030Z",
+=======
+    "time": "2019-04-16T06:27:06.840Z",
+>>>>>>> d89a9832fb2c8290eb1fbf31b465fd8d3d60fe06
+    "url": "http://apidocjs.com",
+    "version": "0.17.7"
+  }
+});

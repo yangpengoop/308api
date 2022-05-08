@@ -1,0 +1,8 @@
+
+NTFS:
+    libntfs-3g.so开头的三个文件复制到 /usr/lib/
+    ntfs-3g,ntfsfix两个执行文件复制 /usr/bin/
+
+fuse内核模块：
+    把fuse.ko复制到/lib/modules/3.18.20/下，执行depmod -a 命令产生modules.dep和map文件的程序
+    执行modprobe fuse.ko 加载fuse内核模块

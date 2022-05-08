@@ -1,0 +1,27 @@
+{
+  "require": {
+    "illuminate/database": "v5.5.44",
+    "illuminate/validation": "v5.5.44",
+    "illuminate/routing": "v5.5.44",
+    "illuminate/events": "v5.5.44",
+    "vlucas/phpdotenv": "v3.3.3",
+    "symfony/filesystem":"v3.4.23"
+  },
+  "autoload": {
+    "classmap": [
+      "app/Controllers",
+      "app/Models",
+      "app/Rester",
+      "app/Exception"
+    ],
+    "psr-4":{
+      "app\\":"app/"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

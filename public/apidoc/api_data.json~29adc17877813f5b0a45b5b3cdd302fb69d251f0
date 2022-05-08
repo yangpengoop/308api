@@ -1,0 +1,1333 @@
+[
+  {
+    "type": "get",
+    "url": "#",
+    "title": "Admin结构体",
+    "group": "02Body",
+    "name": "Admin",
+    "description": "<p>管理用户登陆表</p>",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "id",
+            "description": "<p>管理用户id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "name",
+            "description": "<p>名字</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "pass",
+            "description": "<p>密码（明文）</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "is_login",
+            "description": "<p>是否自动登陆0否1是</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>添加时间</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "updated_at",
+            "description": "<p>最后修改时间</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Models/Admin.php",
+    "groupTitle": "02Body"
+  },
+  {
+    "type": "get",
+    "url": "#",
+    "title": "Config结构体",
+    "group": "02Body",
+    "name": "Config",
+    "description": "<p>配置表</p>",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "id",
+            "description": "<p>配置id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "type",
+            "description": "<p>类型1文本2列表</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "key",
+            "description": "<p>KEY值</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "value",
+            "description": "<p>值</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "description",
+            "description": "<p>描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>添加时间</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "updated_at",
+            "description": "<p>最后修改时间</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "KEY",
+            "description": "<p>KEY列表 <br> key：QUALITY_LEVEL 描述：画质-画质 <br> key：QUALITY_RATE 描述：画质-码率 <br> key：OSD_FORMAT 描述：OSD-OSD格式 <br> key：OSD_POSITION 描述：OSD-OSD位置  1：左上角  2：右上角 3：左下角 4：右下角 <br> key：PUSH_RTMP_URL 描述：OSD-RTMP推流地址 <br> key：PUSH_VIDEOSAVE_URL 描述：OSD-录像文件保存路径 <br> key：3D_SDL 描述：3D设置-双SDL输出 <br> key：NETWORK_IP 描述：网络-IP <br> key：NETWORK_SUBNET 描述：网络-子网掩码 <br> key：NETWORK_GATEWAY 描述：网络-网关 <br> key：NETWORK_DNS 描述：网络-DNS <br> key：NETWORK_AUTO 描述：网络-自动配置 1：关闭  2：开启 <br> key：DISC_FULLACTION 描述：磁盘-磁盘满后的动作 <br> key：COMMON_TIMEFORMAT 描述：通用-时间格式 <br> key：DISPLAY_LIGHT 描述：显示-亮度 <br> key：DISPLAY_RATIO 描述：显示-对比度 <br> key：DISPLAY_SATURATION 描述：显示-饱和度 <br></p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Models/Config.php",
+    "groupTitle": "02Body"
+  },
+  {
+    "type": "get",
+    "url": "#",
+    "title": "Files结构体",
+    "group": "02Body",
+    "name": "Files",
+    "description": "<p>用户文件表</p>",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "id",
+            "description": "<p>文件id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "patient_case_id",
+            "description": "<p>病人病历id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "type",
+            "description": "<p>文件类型1图片2视频</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "name",
+            "description": "<p>文件名字</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "path",
+            "description": "<p>储存路径</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>添加时间</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "updated_at",
+            "description": "<p>最后修改时间</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Models/Files.php",
+    "groupTitle": "02Body"
+  },
+  {
+    "type": "get",
+    "url": "#",
+    "title": "PatientCase结构体",
+    "group": "02Body",
+    "name": "PatientCase",
+    "description": "<p>病人信息表</p>",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "id",
+            "description": "<p>病人id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "name",
+            "description": "<p>名字</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "sex",
+            "description": "<p>性别</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "surgery_date",
+            "description": "<p>手术日期</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "hospital_number",
+            "description": "<p>住院号</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "bed_number",
+            "description": "<p>床位号</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "department",
+            "description": "<p>科室</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "operating_room",
+            "description": "<p>手术室</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "surgery_name",
+            "description": "<p>手术名称</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "age",
+            "description": "<p>年龄</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "ward",
+            "description": "<p>病区</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "surgery_doctor",
+            "description": "<p>手术医生</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "created_at",
+            "description": "<p>添加时间</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "updated_at",
+            "description": "<p>最后修改时间</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Models/PatientCase.php",
+    "groupTitle": "02Body"
+  },
+  {
+    "type": "get",
+    "url": "/admin/",
+    "title": "4、系统设置-用户列表",
+    "sampleRequest": [
+      {
+        "url": "/admin"
+      }
+    ],
+    "group": "Config_system",
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/AdminController.php",
+    "groupTitle": "Config_system",
+    "name": "GetAdmin"
+  },
+  {
+    "type": "get",
+    "url": "/system",
+    "title": "1、系统设置-列表",
+    "sampleRequest": [
+      {
+        "url": "/system"
+      }
+    ],
+    "group": "Config_system",
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/SystemController.php",
+    "groupTitle": "Config_system",
+    "name": "GetSystem"
+  },
+  {
+    "type": "get",
+    "url": "/system/get-key",
+    "title": "8、系统设置-获取某一个key的值",
+    "sampleRequest": [
+      {
+        "url": "/system/get-key"
+      }
+    ],
+    "group": "Config_system",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "key",
+            "description": "<p>key名字</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/SystemController.php",
+    "groupTitle": "Config_system",
+    "name": "GetSystemGetKey"
+  },
+  {
+    "type": "post",
+    "url": "/admin/add",
+    "title": "5、系统设置-用户新增",
+    "sampleRequest": [
+      {
+        "url": "/admin/add"
+      }
+    ],
+    "group": "Config_system",
+    "name": "admin_add",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "name",
+            "description": "<p>用户名</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "pass",
+            "description": "<p>密码</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "repass",
+            "description": "<p>重复密码</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/AdminController.php",
+    "groupTitle": "Config_system"
+  },
+  {
+    "type": "post",
+    "url": "/admin/del",
+    "title": "7、系统设置-用户删除",
+    "sampleRequest": [
+      {
+        "url": "/admin/del"
+      }
+    ],
+    "group": "Config_system",
+    "name": "admin_del",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "name",
+            "description": "<p>用户名</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/AdminController.php",
+    "groupTitle": "Config_system"
+  },
+  {
+    "type": "post",
+    "url": "/admin/edit",
+    "title": "6、系统设置-账号自动登陆",
+    "sampleRequest": [
+      {
+        "url": "/admin/edit"
+      }
+    ],
+    "group": "Config_system",
+    "name": "admin_edit",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "name",
+            "description": "<p>用户名</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "pass",
+            "description": "<p>密码</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "repass",
+            "description": "<p>重复密码</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": true,
+            "field": "is_login",
+            "description": "<p>【自动登陆： 0否 1 是】</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/AdminController.php",
+    "groupTitle": "Config_system"
+  },
+  {
+    "type": "post",
+    "url": "/system/edit",
+    "title": "2、系统设置-编辑(全局)",
+    "sampleRequest": [
+      {
+        "url": "/system/edit"
+      }
+    ],
+    "group": "Config_system",
+    "name": "system_edit",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "key",
+            "description": "<p>键名 样例：{key:value}</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/SystemController.php",
+    "groupTitle": "Config_system"
+  },
+  {
+    "type": "get",
+    "url": "/system/get-network-key",
+    "title": "9、系统设置-获取网络key值",
+    "sampleRequest": [
+      {
+        "url": "/system/get-network-key"
+      }
+    ],
+    "group": "Config_system",
+    "name": "system_getNetworkKey",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "key",
+            "description": "<p>网络-key : NETWORK_IP , NETWORK_SUBNET , NETWORK_GATEWAY , NETWORK_DNS 中的一个</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/SystemController.php",
+    "groupTitle": "Config_system"
+  },
+  {
+    "type": "post",
+    "url": "/system/network-edit",
+    "title": "3、系统设置-网络编辑",
+    "sampleRequest": [
+      {
+        "url": "/system/network-edit"
+      }
+    ],
+    "group": "Config_system",
+    "name": "system_networkEdit",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "NETWORK_IP",
+            "description": "<p>网络-IP</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "NETWORK_SUBNET",
+            "description": "<p>网络-子网掩码</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "NETWORK_GATEWAY",
+            "description": "<p>网络-网关</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "NETWORK_DNS",
+            "description": "<p>网络-DNS</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": true,
+            "field": "NETWORK_AUTO",
+            "description": "<p>网络-自动配置 【1：关闭  2：开启】</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/SystemController.php",
+    "groupTitle": "Config_system"
+  },
+  {
+    "type": "post",
+    "url": "/video/edit",
+    "title": "2、录像设置-编辑",
+    "sampleRequest": [
+      {
+        "url": "/video/edit"
+      }
+    ],
+    "group": "Config_video",
+    "name": "video_edit",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "key",
+            "description": "<p>键名 样例：{key:value}</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/VideoController.php",
+    "groupTitle": "Config_video"
+  },
+  {
+    "type": "get",
+    "url": "/video",
+    "title": "1、录像设置-列表",
+    "sampleRequest": [
+      {
+        "url": "/video"
+      }
+    ],
+    "group": "Config_video",
+    "name": "video_list",
+    "version": "0.0.0",
+    "filename": "app/Controllers/Config/VideoController.php",
+    "groupTitle": "Config_video"
+  },
+  {
+    "type": "post",
+    "url": "/files/add",
+    "title": "2、添加资源",
+    "sampleRequest": [
+      {
+        "url": "/files/add"
+      }
+    ],
+    "group": "Files",
+    "name": "add",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "patient_case_id",
+            "description": "<p>病人资源id</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "type",
+            "description": "<p>文件类型1图片2视频</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "path",
+            "description": "<p>储存路径</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "name",
+            "description": "<p>文件名字</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Files/IndexController.php",
+    "groupTitle": "Files"
+  },
+  {
+    "type": "post",
+    "url": "/files/delete",
+    "title": "4、删除资源",
+    "sampleRequest": [
+      {
+        "url": "/files/delete"
+      }
+    ],
+    "group": "Files",
+    "name": "delete",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "id",
+            "description": "<p>资源id</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Files/IndexController.php",
+    "groupTitle": "Files"
+  },
+  {
+    "type": "get",
+    "url": "/files",
+    "title": "1、病人资源列表",
+    "sampleRequest": [
+      {
+        "url": "/files"
+      }
+    ],
+    "group": "Files",
+    "name": "list",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "patient_case_id",
+            "description": "<p>病人病历id</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Files/IndexController.php",
+    "groupTitle": "Files"
+  },
+  {
+    "type": "post",
+    "url": "/folder/add",
+    "title": "1、创建目录",
+    "sampleRequest": [
+      {
+        "url": "/folder/add"
+      }
+    ],
+    "group": "Folder",
+    "name": "add",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "root_path",
+            "description": "<p>盘符路径</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "path",
+            "description": "<p>相对路径</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Files/FolderController.php",
+    "groupTitle": "Folder"
+  },
+  {
+    "type": "post",
+    "url": "/folder/copy",
+    "title": "4、拷贝文件",
+    "sampleRequest": [
+      {
+        "url": "/folder/copy"
+      }
+    ],
+    "group": "Folder",
+    "name": "copy",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "path",
+            "description": "<p>复制的路径</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "new_path",
+            "description": "<p>粘贴的绝对路径</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "root_path",
+            "description": "<p>复制的盘符地址</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "root_new_path",
+            "description": "<p>粘贴的盘符地址</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "name",
+            "description": "<p>文件名字</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Files/FolderController.php",
+    "groupTitle": "Folder"
+  },
+  {
+    "type": "post",
+    "url": "/folder/del",
+    "title": "3、删除文件、文件夹",
+    "sampleRequest": [
+      {
+        "url": "/folder/del"
+      }
+    ],
+    "group": "Folder",
+    "name": "del",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "root_path",
+            "description": "<p>盘符路径</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "path",
+            "description": "<p>相对路径</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Files/FolderController.php",
+    "groupTitle": "Folder"
+  },
+  {
+    "type": "get",
+    "url": "/folder/get",
+    "title": "2、获取目录",
+    "sampleRequest": [
+      {
+        "url": "/folder/get"
+      }
+    ],
+    "group": "Folder",
+    "name": "get",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "root_path",
+            "description": "<p>盘符路径</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "path",
+            "description": "<p>相对路径</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "type",
+            "description": "<p>类型 数据类型的 0:全部  1：文件夹，2：文件</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "str",
+            "optional": false,
+            "field": "type",
+            "description": "<p>返回数据类型的1：文件夹，2：文件</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Files/FolderController.php",
+    "groupTitle": "Folder"
+  },
+  {
+    "type": "get",
+    "url": "/folder/get-disk",
+    "title": "5、获取磁盘信息",
+    "sampleRequest": [
+      {
+        "url": "/folder/get-disk"
+      }
+    ],
+    "group": "Folder",
+    "name": "get_disk",
+    "version": "0.0.0",
+    "filename": "app/Controllers/Files/FolderController.php",
+    "groupTitle": "Folder"
+  },
+  {
+    "type": "post",
+    "url": "/patient/add",
+    "title": "2、添加病人",
+    "sampleRequest": [
+      {
+        "url": "/patient/add"
+      }
+    ],
+    "group": "Patient",
+    "name": "add",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "name",
+            "description": "<p>名字</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "sex",
+            "description": "<p>性别</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_date",
+            "description": "<p>手术日期</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "hospital_number",
+            "description": "<p>住院号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "bed_number",
+            "description": "<p>床位号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "department",
+            "description": "<p>科室</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "operating_room",
+            "description": "<p>手术室</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_name",
+            "description": "<p>手术名称</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "age",
+            "description": "<p>年龄</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "ward",
+            "description": "<p>病区</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_doctor",
+            "description": "<p>手术医生</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Patient/IndexController.php",
+    "groupTitle": "Patient"
+  },
+  {
+    "type": "post",
+    "url": "/case-csv/input-csv",
+    "title": "6、病例管理-导入病例",
+    "sampleRequest": [
+      {
+        "url": "/case-csv/input-csv"
+      }
+    ],
+    "group": "Patient",
+    "name": "casecsv_inputcsv",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "filePath",
+            "description": "<p>导入文件的路径【绝对路径】</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Patient/CaseCsvController.php",
+    "groupTitle": "Patient"
+  },
+  {
+    "type": "post",
+    "url": "/case-csv/output-csv",
+    "title": "5、病例管理-导出病例",
+    "sampleRequest": [
+      {
+        "url": "/case-csv/output-csv"
+      }
+    ],
+    "group": "Patient",
+    "name": "casecsv_outputcsv",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "filePath",
+            "description": "<p>文件导出路径【绝对路径】</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Patient/CaseCsvController.php",
+    "groupTitle": "Patient"
+  },
+  {
+    "type": "post",
+    "url": "/patient/delete",
+    "title": "4、删除病人",
+    "sampleRequest": [
+      {
+        "url": "/patient/delete"
+      }
+    ],
+    "group": "Patient",
+    "name": "delete",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "id",
+            "description": "<p>病人id</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Patient/IndexController.php",
+    "groupTitle": "Patient"
+  },
+  {
+    "type": "post",
+    "url": "/patient/edit",
+    "title": "3、编辑病人",
+    "sampleRequest": [
+      {
+        "url": "/patient/edit"
+      }
+    ],
+    "group": "Patient",
+    "name": "edit",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "id",
+            "description": "<p>病人id</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": false,
+            "field": "name",
+            "description": "<p>名字</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "sex",
+            "description": "<p>性别</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_date",
+            "description": "<p>手术日期</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "hospital_number",
+            "description": "<p>住院号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "bed_number",
+            "description": "<p>床位号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "department",
+            "description": "<p>科室</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "operating_room",
+            "description": "<p>手术室</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_name",
+            "description": "<p>手术名称</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "age",
+            "description": "<p>年龄</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "ward",
+            "description": "<p>病区</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_doctor",
+            "description": "<p>手术医生</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Patient/IndexController.php",
+    "groupTitle": "Patient"
+  },
+  {
+    "type": "get",
+    "url": "/patient",
+    "title": "1、病人列表",
+    "sampleRequest": [
+      {
+        "url": "/patient"
+      }
+    ],
+    "group": "Patient",
+    "name": "list",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "name",
+            "description": "<p>过滤名字</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "sex",
+            "description": "<p>性别</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_date",
+            "description": "<p>手术日期</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "hospital_number",
+            "description": "<p>住院号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "bed_number",
+            "description": "<p>床位号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "department",
+            "description": "<p>科室</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "operating_room",
+            "description": "<p>手术室</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_name",
+            "description": "<p>手术名称</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "age",
+            "description": "<p>年龄</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "ward",
+            "description": "<p>病区</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "str",
+            "optional": true,
+            "field": "surgery_doctor",
+            "description": "<p>手术医生</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "app/Controllers/Patient/IndexController.php",
+    "groupTitle": "Patient"
+  }
+]
